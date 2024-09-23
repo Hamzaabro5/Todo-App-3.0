@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import {createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../Config';
+import { Link } from 'react-router-dom';
 
 function Register() {
   const email = useRef()
@@ -34,6 +35,7 @@ function Register() {
       <input className='input input-bordered rounded-full ms-1 input-lg' type="password" placeholder='Enter Your Password' ref={password}/><br /><br />
       <button className='btn btn-info rounded-full btn-md'>Register</button>
     </form>
+    <h1 className='text-center mt-5 font-bold text-xl'>Already a User? <Link className='text-blue-600 underline' to="/login">Login</Link></h1>
     </>
   )
 }

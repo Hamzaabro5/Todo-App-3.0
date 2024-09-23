@@ -1,3 +1,5 @@
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from '../Config';
 import { useState , useRef } from "react"
 
 const Home = ()=> {
@@ -31,6 +33,13 @@ const Home = ()=> {
     setTodo([...todo])
   }
 
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      const uid = user.uid;
+    } else {
+      window.location = "./Register";
+    }
+  });
 
   return(
   <>
