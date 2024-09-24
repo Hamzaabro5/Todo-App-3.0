@@ -20,6 +20,7 @@ function Register() {
     .catch((error) => {
       const errorMessage = error.message;
       console.log(errorMessage);
+      alert(error)
       
     });
     email.current.value = ``
