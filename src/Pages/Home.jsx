@@ -33,13 +33,13 @@ const Home = ()=> {
     setTodo([...todo])
   }
 
-  // onAuthStateChanged(auth, (user) => {
-  //   if (user) {
-  //     const uid = user.uid;
-  //   } else {
-  //     window.location = "/Register";
-  //   }
-  // });
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      const uid = user.uid;
+    } else {
+      window.location = "./Register.jsx";
+    }
+  });
 
   return(
   <>
