@@ -1,5 +1,5 @@
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from '../Config';
+import { auth } from '../config';
 import { useState , useRef } from "react"
 
 const Home = ()=> {

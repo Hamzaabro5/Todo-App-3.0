@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import {signInWithEmailAndPassword} from "firebase/auth";
-import { auth } from '../Config';
+import { auth } from '../config';
 import { Link } from 'react-router-dom';
 
 function Register() {
