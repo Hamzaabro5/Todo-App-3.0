@@ -37,7 +37,7 @@ const Home = ()=> {
     if (user) {
       const uid = user.uid;
     } else {
-      window.location = "./Register.jsx";
+      window.location = `./Register`;
     }
   });
 
